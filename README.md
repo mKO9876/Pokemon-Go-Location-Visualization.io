@@ -25,4 +25,4 @@ The project integrates data from three different sources available on the Kaggle
 
  - <a href="https://www.kaggle.com/datasets/semioniy/predictemall">Predict 'Em All</a> – information on locations and environmental conditions at the time of appearance.
 
- - <a href="https://www.kaggle.com/datasets/bretthammit/pokemongo-stats-dataset"">Pokémon Go Stats</a> – attack, defense and pokemon stamina statistics.
+ - <a href="https://www.kaggle.com/datasets/bretthammit/pokemongo-stats-dataset">Pokémon Go Stats</a> – attack, defense and pokemon stamina statistics.
