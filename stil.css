@@ -1,0 +1,191 @@
+@font-face {
+    font-family: "Press Start 2P", system-ui;
+    font-style: normal;
+    font-weight: 400;
+    src: url('./font/PressStart2P-Regular.ttf') format('truetype');
+}
+
+/* 
+html {
+    overflow-y: hidden;
+} */
+
+body {
+    letter-spacing: -0.011em;
+
+    font-size: 16px;
+    height: 100vh;
+    width: 100%;
+    justify-self: center;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+
+    background-color: #f4f4f4;
+}
+
+select {
+    width: 250px;
+    height: 30px;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+}
+
+
+/* NAV */
+
+#nav {
+    background-color: #3965A5;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav h1 {
+    color: #FFCA02;
+    padding-left: 50px;
+}
+
+#nav input {
+    height: 30px;
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 20px;
+
+    box-shadow: 10px 5px 5px #2d5086;
+}
+
+textarea:focus,
+input:focus {
+    outline: 3px solid #FFCA02;
+    /* border: 3px solid #FFCA02; */
+}
+
+#opcije {
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+    background-color: #f1f1f1;
+    position: absolute;
+}
+
+.option-item {
+    padding: 5px;
+}
+
+
+/* OKVIR */
+
+.okvir {
+    display: grid;
+    height: 85vh;
+    gap: 20px;
+    padding: 20px;
+
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 40% 60%;
+
+    grid-template-areas:
+        "mapa podaci"
+        "mapa graf";
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow: hidden;
+}
+
+/* MAPA */
+
+#mapa {
+    grid-area: mapa;
+    display: flex;
+    flex-direction: row;
+    margin: 2px;
+    align-items: center;
+    position: relative;
+}
+
+#info {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    width: fit-content;
+    padding: 40px;
+    background-color: rgba(46, 46, 46, 0.5); 
+    color: rgb(232, 231, 231);
+    font-size: bold;
+}
+
+.lista {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#point_data{
+    position: absolute; 
+    padding: 10px; 
+    border-radius: 5px; 
+    pointer-events: none;
+    font-size: 12px;
+}
+
+/* POKEMON STAT */
+
+#pokemon_stat {
+    grid-area: podaci;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 12px;
+}
+
+
+#status ul {
+    padding: 10px;
+}
+
+#status li {
+    list-style: none;
+    margin: 10px;
+}
+
+#slika img {
+    width: 200px;
+    height: auto;
+}
+
+/* LINIJSKI GRAF */
+
+#linijski_graf {
+    grid-area: "graf";
+    position: relative;
+}
+
+
+circle {
+    pointer-events: none;
+}
+
+.voronoi {
+    fill: transparent;
+}

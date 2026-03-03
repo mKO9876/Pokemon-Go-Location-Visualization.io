@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="stil.css">
+    </link>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Karta</title>
+</head>
+
+<body>
+    <div id="nav">
+        <!-- gornja traka - naziv -->
+        <h1>EcoDex</h1>
+
+        <div id="input-container">
+            <input type="text" name="pratraga" id="pretraga" placeholder="Insert pokemon name">
+            <div id="opcije"></div>
+        </div>
+
+    </div>
+
+    <div id="okvir" class="okvir">
+
+        <div id="mapa" class="card">
+            <div class="filter">
+                <select name="prognoza" id="prognoza" class="lista">
+                </select>
+            </div>
+            <div id="point_data">
+            </div>
+        </div>
+
+
+
+        <div id="pokemon_stat" class="card">
+            <div id="slika"></div>
+            <div id="status"> </div>
+        </div>
+        <div id="linijski_graf" class="card">
+            <div class="filter">
+                <select name="atribut" id="atribut" class="lista">
+                    <option value="appearedTimeOfDay" selected="selected">Appeared Time Of Day</option>
+                    <option value="terrainType">Terrain Type</option>
+                    <option value="closeToWater">Close To Water</option>
+                    <option value="weather">Weather</option>
+                    <option value="temperature">Temperature</option>
+                </select>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="d3.js"></script>
+    <script src="pretraga.js"></script>
+    <script src="karta.js"></script>
+    <script src="https://d3js.org/d3-hexbin.v0.2.min.js"></script>
+    <script src="graf.js"></script>
+</body>
+
+</html>
