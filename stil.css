@@ -196,9 +196,10 @@ circle {
 
 @media screen and (min-width: 300px) and (max-width: 1083px) {
 
-    body{
-        font-size: 30px;
+    * {
+        font-size: 25px;
     }
+
     #nav {
         display: flex;
         flex-direction: column;
@@ -225,6 +226,11 @@ circle {
         box-shadow: 10px 5px 5px #2d5086;
     }
 
+    .lista {
+        height: 50px;
+        width: 50vw;
+    }
+
     .okvir {
         display: grid;
         height: auto;
@@ -233,7 +239,7 @@ circle {
         grid-template-columns: 1fr;
 
         /* Koristi 'auto' ili 'min-content' da izbjegneš fiksne px koji kvare layout */
-        grid-template-rows: 300px 700px auto;
+        grid-template-rows: 500px 700px auto;
 
         grid-template-areas:
             "podaci"
